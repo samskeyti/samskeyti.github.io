@@ -1,0 +1,18 @@
+@font-face {
+  font-family: samskeyti;
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -1;
+  src: url(../fonts/samskeyti-Regular.otf) format('opentype');
+}
+
+#header{
+  background-color: #0776A0;
+}
+.my-font{
+  font-family: 'samskeyti';
+}
+#header h1.my-font{
+  font-size:3em;
+  margin-bottom: 1em;
+}
