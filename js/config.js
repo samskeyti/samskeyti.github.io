@@ -5,20 +5,7 @@
 */
 
 
-$(function() { h5u_parallelism.init({
 
-	/*
-
-		Put your own settings here (they'll override the defaults). eg.
-
-		itemHeight: 250,
-		padding: 5
-		
-		Refer to README.txt for details.
-
-	*/
-
-});});
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////
