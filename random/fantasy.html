@@ -79,6 +79,8 @@
                 var n = generateName();
                 document.getElementById('name').textContent = n;
                 document.title = 'Fantasy Writer Name Generator: ' + n;
+                document.getElementById('twitterButton').innerHTML = '<a href="https://twitter.com/share" class="twitter-share-button" data-text="'+document.title+'" data-via="samskeyti79">Tweet</a>';
+                if(twttr){twttr.widgets.load();}
             }
             newName();
         </script>
