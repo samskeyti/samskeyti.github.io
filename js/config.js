@@ -318,7 +318,7 @@
 										}
 										else
 										{
-											$itemInner.css('opacity', 0);
+											//$itemInner.css('opacity', 0);
 											
 											$img
 												.load(function() {
