@@ -100,9 +100,12 @@ textarea {
   display: none !important;
 }
 body{
-    padding-top:20px;
     background-color: #000;
     font-family: 'Lato', sans-serif;
+}
+.title{
+    color: #fff;
+    font-variant: small-caps;
 }
 .container{
     max-width: 320px;
