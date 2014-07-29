@@ -136,8 +136,41 @@ body{
     background-color: #FFD37B;
     color: #C66222;
 }
+.partcloudy{
+    background-color: #B0C4DE;
+    color: #778899;
+}
+.cloudy{
+    background-color:#D3D3D3;
+    color: #708090;
+}
+.snowy{
+    background-color: #FFFAFA;
+    color: #ADD8E6;
+}
+.hot{
+    background-color: #FFD700;
+    color: #B22222;
+}
+.variable{
+    background-color: #E6E6FA;
+    color: #808080;
+}
+.foggy{
+    background-color: #C0C0C0;
+    color: #696969;
+}
 .rainy{
-
+    background-color: #A9A9A9;
+    color: #008B8B;
+}
+.thunder{
+    background-color: #BC8F8F;
+    color: #000;
+}
+.meteor{
+     background-color: #FF7F50;
+    color: #800000;
 }
 
 
