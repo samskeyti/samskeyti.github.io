@@ -42,7 +42,7 @@ angular.module('App', [])
             }();
             var d = new Date().getTime() + 86400*1000*delta;
             var c = conditions[Math.floor(Math.random()*conditions.length)];
-            var t = $scope.baseT[b-1] - 5 + Math.floor(Math.random()*11) + c.tMod;
+            var t = $scope.baseT[b-1] - 5 + Math.floor(Math.random()*6) + Math.floor(Math.random()*5) + c.tMod;
             var day = {
                 date: $window.moment(d).calendar(),
                 condition: c,
