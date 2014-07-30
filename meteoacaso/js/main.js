@@ -86,6 +86,7 @@ angular.module('App', [])
                           $scope.city = results[0].address_components[y].long_name;
                             $scope.randomDays();
                             $scope.selR = 'city';
+                            $scope.$apply();
                           break;
                         }
                     }
