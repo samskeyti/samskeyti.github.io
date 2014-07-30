@@ -142,7 +142,7 @@ body{
 }
 .partcloudy{
     background-color: #B0C4DE;
-    color: #778899;
+    color: #2F4F4F;
 }
 .cloudy{
     background-color:#D3D3D3;
@@ -150,7 +150,7 @@ body{
 }
 .snowy{
     background-color: #FFFAFA;
-    color: #ADD8E6;
+    color: #66CDAA;
 }
 .hot{
     background-color: #FFD700;
@@ -166,7 +166,7 @@ body{
 }
 .rainy{
     background-color: #A9A9A9;
-    color: #008B8B;
+    color: #008080;
 }
 .thunder{
     background-color: #BC8F8F;
@@ -176,8 +176,14 @@ body{
      background-color: #FF7F50;
     color: #800000;
 }
-
-
+.alien{
+    background-color: #90EE90;
+    color: #2E8B57;
+}
+.tornado{
+    background-color: #D2B48C;
+    color: #C71585;
+}
 
 
 
