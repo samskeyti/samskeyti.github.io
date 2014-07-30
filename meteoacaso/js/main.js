@@ -84,7 +84,8 @@ angular.module('App', [])
                       var type = results[0].address_components[y].types[0];
                         if (type === "locality"){
                           $scope.city = results[0].address_components[y].long_name;
-                            $scope.$apply();
+                            $scope.randomDays();
+                            $scope.selR = 'city';
                           break;
                         }
                     }

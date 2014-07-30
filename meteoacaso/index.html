@@ -46,7 +46,7 @@
                             <div class="input-group">
                                 <span class="input-group-addon" style="cursor:pointer;" ng-click="geo()"><span class="glyphicon glyphicon-map-marker"></span></span>
                                 <select class="form-control" ng-change="randomDays()" ng-model="selR">
-                                    <option>{{city}}</option>
+                                    <option value="city" selected>{{city}}</option>
                                     <option ng-repeat="region in regions">{{region}}</option>
                                 </select>
                             </div>
