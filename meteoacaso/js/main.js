@@ -79,6 +79,14 @@ angular.module('App', [])
             geocoder.geocode({ 'latLng': yourLocation }, function (results, status) {
             if(status == google.maps.GeocoderStatus.OK) {
               if(results[0]) {
+                  $scope.city = '':
+                for (var y = 0, length_2 = results[0].address_components.length; y < length_2; y++){
+                      var type = results[0].address_components[y].types[0];
+                        if (type === "locality"){
+                          $scope.city = results[0].address_components[y].long_name;
+                          break;
+                        }
+                    }
                 
               } else {
                 
