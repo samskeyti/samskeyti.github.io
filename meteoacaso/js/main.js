@@ -11,6 +11,9 @@ moment.lang('it',{
 angular.module('App', [])
   .controller('AppController', ['$scope', '$window', function($scope, $window) {
     
+      $scope.regions = [
+        'Abruzzo','Basilicata','Calabria','Campania','Emilia-Romagna','Friuli-Venezia Giulia','Lazio','Liguria','Lombardia','Marche','Molise','Piemonte','Puglia','Sardegna','Sicilia','Toscana','Trentino-Alto Adige','Umbria','Valle d\'Aosta','Veneto'
+      ];
     
     $scope.conditions = [
         {icon: 'day-cloudy', label: 'Parzialmente Nuvoloso', tMod: 0, class: 'partcloudy', weight: '775668'},
@@ -25,11 +28,12 @@ angular.module('App', [])
         
         {icon: 'meteor', label: 'Pioggia di meteore', tMod: 30, class: 'meteor', weight: '111111'},
         {icon: 'alien', label: 'Atterraggio alieni', tMod: 0, class: 'alien', weight: '111111'},
-        {icon: 'tornado', label: 'Tornado', tMod: 0, class: 'tornado', weight: '111111'}
+        {icon: 'tornado', label: 'Tornado', tMod: 0, class: 'tornado', weight: '111111'},
+        {icon: 'dust', label: 'Scie chimiche', tMod: 0, class: 'chemicals', weight: '111111'},
     ];
     $scope.baseT = [5,15,23,27,20,10];
       
-    $scope.days = function(){
+    $scope.randomDays = function(){
         var days = [];
         var randomDay = function(delta){
             var b = Math.ceil(parseInt($window.moment().format('M'))/2);
@@ -55,8 +59,69 @@ angular.module('App', [])
         for(var i=0;i<7;i++){
             days.push(randomDay(i));
         }
-        return days;
-    }();
- 
+        $scope.days = days;
+    };
+    $scope.randomDays();
+    
+    $scope.geo = function(){
+        if($window.navigator && $window.navigator.geolocation) {
+        // make the request for the user's position
+        $window.navigator.geolocation.getCurrentPosition(function(position){
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            // set up the Geocoder object
+            var geocoder = new google.maps.Geocoder();
+
+            // turn coordinates into an object
+            var yourLocation = new google.maps.LatLng(latitude, longitude);
+
+            // find out info about our location
+            geocoder.geocode({ 'latLng': yourLocation }, function (results, status) {
+            if(status == google.maps.GeocoderStatus.OK) {
+              if(results[0]) {
+                
+              } else {
+                
+              }
+            } else {
+              
+            }
+          });
+
+        });
+    }
+    };  
     
   }]);
+
+
+
+ 
+// use Google Maps API to reverse geocode our location
+function printAddress(latitude, longitude, isMaxMind) {
+    // set up the Geocoder object
+    var geocoder = new google.maps.Geocoder();
+ 
+    // turn coordinates into an object
+    var yourLocation = new google.maps.LatLng(latitude, longitude);
+ 
+    // find out info about our location
+    geocoder.geocode({ 'latLng': yourLocation }, function (results, status) {
+    if(status == google.maps.GeocoderStatus.OK) {
+      if(results[0]) {
+        $('#results').fadeOut(function() {
+          $(this).html('<p><b>Abracadabra!</b> My guess is:</p><p><em>' + results[0].formatted_address + '</em></p>').fadeIn();
+        })
+      } else {
+        error('Google did not return any results.');
+      }
+    } else {
+      error("Reverse Geocoding failed due to: " + status);
+    }
+  });
+ 
+  // if we used MaxMind for location, add attribution link
+  if(isMaxMind) {
+    $('body').append('<p><a href="http://www.maxmind.com" target="_blank">IP to Location Service Provided by MaxMind</a></p>');
+  }
+}
