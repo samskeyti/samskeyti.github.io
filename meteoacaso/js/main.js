@@ -79,7 +79,7 @@ angular.module('App', [])
             geocoder.geocode({ 'latLng': yourLocation }, function (results, status) {
             if(status == google.maps.GeocoderStatus.OK) {
               if(results[0]) {
-                  $scope.city = '':
+                  $scope.city = '';
                 for (var y = 0, length_2 = results[0].address_components.length; y < length_2; y++){
                       var type = results[0].address_components[y].types[0];
                         if (type === "locality"){
@@ -105,31 +105,3 @@ angular.module('App', [])
 
 
  
-// use Google Maps API to reverse geocode our location
-function printAddress(latitude, longitude, isMaxMind) {
-    // set up the Geocoder object
-    var geocoder = new google.maps.Geocoder();
- 
-    // turn coordinates into an object
-    var yourLocation = new google.maps.LatLng(latitude, longitude);
- 
-    // find out info about our location
-    geocoder.geocode({ 'latLng': yourLocation }, function (results, status) {
-    if(status == google.maps.GeocoderStatus.OK) {
-      if(results[0]) {
-        $('#results').fadeOut(function() {
-          $(this).html('<p><b>Abracadabra!</b> My guess is:</p><p><em>' + results[0].formatted_address + '</em></p>').fadeIn();
-        })
-      } else {
-        error('Google did not return any results.');
-      }
-    } else {
-      error("Reverse Geocoding failed due to: " + status);
-    }
-  });
- 
-  // if we used MaxMind for location, add attribution link
-  if(isMaxMind) {
-    $('body').append('<p><a href="http://www.maxmind.com" target="_blank">IP to Location Service Provided by MaxMind</a></p>');
-  }
-}
