@@ -3,13 +3,17 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    @samskeyti79
+    @Auloedus
 
 # THANKS
 
-    <name>
+    http://erikflowers.github.io/weather-icons/
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     Normalize.css, jQuery, Modernizr
+    AngularJS
+    Bootstrap
+    MomentJS

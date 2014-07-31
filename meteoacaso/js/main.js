@@ -25,7 +25,7 @@ angular.module('App', [])
         {icon: 'fog', label: 'Nebbia', tMod:-5, class: 'foggy', weight: '530047'},
         {icon: 'day-sunny', label: 'Sereno', tMod: 3, class: 'sunny', weight: '579974'},
         {icon: 'rain', label: 'Pioggia', tMod: -2, class: 'rainy', weight: '663367'},
-        {icon: 'thunderstorm', label: 'Temporali', tMod:-4, class: 'thunder', weight: '235532'},
+        {icon: 'thunderstorm', label: 'Temporali', tMod:-4, class: 'thunder', weight: '346643'},
         
         {icon: 'meteor', label: 'Pioggia di meteore', tMod: 30, class: 'meteor', weight: '111111'},
         {icon: 'alien', label: 'Atterraggio alieni', tMod: 0, class: 'alien', weight: '111111'},
