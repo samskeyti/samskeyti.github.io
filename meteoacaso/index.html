@@ -54,17 +54,59 @@
                     </div>
                 </div>
                 
+                <div class="col-md-12" ng-show="alert">
+                    <div class="row">
+                        <div class="col-md-12"><div class="alert alert-danger" role="alert"></div></div>
+                    </div>
+                </div>
+                
                 <div class="col-md-12" ng-repeat="day in days">
                     <div class="panel" ng-class="day.condition.class">
                         <div>
                             <div class="date">{{day.date}}</div>
                             <div class="text-center"><span class="wi wi-{{day.condition.icon}}"></span></div>
                             <div class="row">
-                                <div class="col-md-6 col-sm-6 text-center"><div class="temperature">{{day.temperature}}°</div></div>
-                                <div class="col-md-6 col-sm-6"><div class="condition">{{day.condition.label}}</div></div>
+                                <div class="col-md-6 col-sm-6 col-xs-6 text-center"><div class="temperature">{{day.temperature}}°</div></div>
+                                <div class="col-md-6 col-sm-6 col-xs-6"><div class="condition">{{day.condition.label}}</div></div>
                             </div>
                         </div>
                         
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12"><div class="alert alert-info" role="alert">
+                            
+				<h3 style="cursor:pointer;margin-top:10px;" ng-click="showinfo=!showinfo">Cos'è Meteo@Random? &nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" ng-show="!showinfo"></span></h3>
+				<div ng-show="shoinfo">
+					<p>Meteo@Random nasce da questo <a target="_blank" href="https://twitter.com/Auloedus/status/493444915771101184">tweet</a>
+                    e da del tempo (non in senso atmosferico) da perdere.
+                    </p>
+                    <p>È un'app fatta per puro svago, senza nessuno scopo utile se non quello di avere un ennesimo servizio che fa le previsioni, a volte non meno preciso degli altri. Meteo@Random puoi usarlo finché non esce la previsione che desideri così puoi fare quello che avevi programmato infischiandotene di quello che dicono gli altri siti.</p>
+                    <p>Decliniamo ogni responsabilità, quindi, albergatori, non denunciatevi se non vengono i turisti perché è prevista una <i>Pioggia di meteore</i>&trade;.</p>
+				</div>
+			
+                            </div></div>
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12"><div class="alert alert-warning" role="alert">
+                            
+				<h3 style="cursor:pointer;margin-top:10px;" ng-click="showapp=!showapp">Trasforma in un'app &nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" ng-show="!showapp"></span></h3>
+				<div ng-show="showapp">
+					<p>Per salvare questa pagina web e usarla come applicazione sul telefono segui queste istruzioni:</p>
+					<h4>con iPhone o iPad</h4>
+					<p>Su <i>Safari</i> trova questa icona <img src="img/home.svg" alt=""> in basso nello schermo (sull'iPad è in alto) premila e poi premi su <em>Aggiungi a Home</em>.</p>
+					<h4>con Android</h4>
+					<p>Su Chrome tra le opzioni c'è il tasto "Aggiungi a home" oppure salva la pagina tra i preferiti poi vai in widget, selezione "segnalibro" e scegli la pagina "Meteo @ Random".</p>
+					<h4>con Windows Phone</h4>
+					<p>Premi su Altro (bottone in basso a destra con tre puntini) quindi premi su "Aggiungi a Start".</p>
+				</div>
+			
+                            </div></div>
                     </div>
                 </div>
                 

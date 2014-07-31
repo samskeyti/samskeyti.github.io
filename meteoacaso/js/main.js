@@ -33,9 +33,15 @@ angular.module('App', [])
         {icon: 'dust', label: 'Scie chimiche', tMod: 0, class: 'chemicals', weight: '111111'},
     ];
     $scope.baseT = [5,15,23,27,20,10];
+    
+    $scope.alert = '';
+    $scope.showapp = false;
       
     $scope.randomDays = function(){
         var days = [];
+        var alH = 0;
+        var alR = 0;
+        var alC = 0;
         var randomDay = function(delta){
             var b = Math.ceil(parseInt($window.moment().format('M'))/2);
             var conditions = function(){
@@ -55,12 +61,31 @@ angular.module('App', [])
                 condition: c,
                 temperature: t
             };
+            if(c.icon=='hot')alH++;
+            if(c.icon=='thunderstorm' || c.icon=='day-rain')alR++;
+            if(c.icon=='snow' || c.icon=='fog')alC++;
             return day;
         };
         for(var i=0;i<7;i++){
             days.push(randomDay(i));
         }
         $scope.days = days;
+        if(alH>=4 || alR>=5 || alC>=4) {
+            var tipi = [];
+            var nomi = [];
+            $scope.alert = 'Attenzione! Questa settimana è in arrivo ';
+            if(alH>=4){
+                tipi = ['l\'anticiclone','il caldo torrido','l\'onda di calore','la cappa afosa'];
+                nomi = ['Tutankhamon','Quetzalcoatl','Giancarlo','Agamennone'];
+            } else if(alR>=5) {
+                tipi = [];
+                nomi = [];
+            } else if(alC>=4){
+                tipi = [];
+                nomi = [];
+            }
+            //$scope.alert += tipi[Math.floor(Math.random()*tipi.length)] + ' di nome ' + nomi[Math.floor(Math.random()*nomi.length)];
+        }
     };
     $scope.randomDays();
     
