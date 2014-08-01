@@ -9,6 +9,12 @@
         <title>Meteo @ Random</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta property="og:type"            content="website" /> 
+<meta property="og:url"             content="http://ilmeteorandom.it" /> 
+<meta property="og:title"           content="Meteo @ Random" /> 
+<meta property="og:image"           content="http://ilmeteorandom.it/img/logo.png" /> 
+
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -78,7 +84,7 @@
                     <div class="row">
                         <div class="col-md-12"><div class="alert alert-info" role="alert">
                             
-				<h4 style="cursor:pointer;margin-top:10px;" ng-click="showinfo=!showinfo">Cos'è Meteo@Random? &nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" ng-show="!showinfo"></span></h4>
+				<h4 style="cursor:pointer;margin-top:10px;" ng-click="showinfo=!showinfo">Cos'è Meteo@Random? &nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" ng-show="!showinfo"></span><span class="glyphicon glyphicon-chevron-up" ng-show="showinfo"></span></h4>
 				<div ng-show="showinfo">
 					<p>Meteo@Random nasce da questo <a target="_blank" href="https://twitter.com/Auloedus/status/493444915771101184">tweet</a> di <a target="_blank" href="https://twitter.com/Auloedus">@Auloedus</a>
                     e da del tempo (non in senso atmosferico) che <a target="_blank" href="https://twitter.com/samskeyti79">@samskeyti79</a> aveva da perdere.
@@ -95,15 +101,15 @@
                     <div class="row">
                         <div class="col-md-12"><div class="alert alert-warning" role="alert">
                             
-				<h3 style="cursor:pointer;margin-top:10px;" ng-click="showapp=!showapp">Trasforma in un'app &nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" ng-show="!showapp"></span></h3>
+				<h3 style="cursor:pointer;margin-top:10px;" ng-click="showapp=!showapp">Trasforma in un'app &nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" ng-show="!showapp"></span><span class="glyphicon glyphicon-chevron-up" ng-show="showapp"></span></h3>
 				<div ng-show="showapp">
 					<p>Per salvare questa pagina web e usarla come applicazione sul telefono segui queste istruzioni:</p>
 					<h4>con iPhone o iPad</h4>
-					<p>Su <i>Safari</i> trova questa icona <img src="img/home.svg" alt=""> in basso nello schermo (sull'iPad è in alto) premila e poi premi su <em>Aggiungi a Home</em>.</p>
+					<p>Su <i>Safari</i> trova questa icona <img src="img/home.svg" alt=""> (in basso nell'iPhone o in alto nell'iPad) premila e poi scegli <em>Aggiungi a Home</em>.</p>
 					<h4>con Android</h4>
-					<p>Su Chrome tra le opzioni c'è il tasto "Aggiungi a home" oppure salva la pagina tra i preferiti poi vai in widget, selezione "segnalibro" e scegli la pagina "Meteo @ Random".</p>
+					<p>Su Chrome tra le opzioni c'è il tasto <em>Aggiungi a home</em> oppure con il Browser salva la pagina tra i preferiti poi vai in widget, seleziona <em>segnalibro</em> e scegli la pagina "Meteo @ Random".</p>
 					<h4>con Windows Phone</h4>
-					<p>Premi su Altro (bottone in basso a destra con tre puntini) quindi premi su "Aggiungi a Start".</p>
+					<p>Premi su Altro (bottone in basso a destra, quello con tre puntini) quindi premi su <em>Aggiungi a Start</em>.</p>
 				</div>
 			
                             </div></div>
@@ -113,10 +119,10 @@
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6 col-sm-6"><div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></div>
-                        <div class="col-md-6 col-sm-6"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it" data-related="samskeyti79,auloedus" data-hashtags="meteoacaso">Tweet</a>
+                        <div class="col-md-6 col-sm-6"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it" data-related="samskeyti79,auloedus">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
                     </div>
-                    <small class="text-muted">weather icons by <a href="http://erikflowers.github.io/weather-icons/">erikflowers</a></small>
+                    <small class="text-muted">weather icons by <a target="_blank" href="http://erikflowers.github.io/weather-icons/">erikflowers</a></small>
                 </div>
                
                     
