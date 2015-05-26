@@ -19,6 +19,16 @@
 			<link rel="stylesheet" href="css/style-desktop.css" />
 			<link rel="stylesheet" href="css/style-noscript.css" />
 		</noscript>
+		<script src="js/cookies-enabler.js"></script>
+		<script>COOKIES_ENABLER.init({
+scriptClass: 'ce-script',   // Default
+eventScroll: true,         // Default
+bannerHTML: '<p>Questo sito usa i cookies.<a href="#" class="ce-trigger">Abilita i Cookies</a></p>',   // Default
+cookie: {
+		name: 'ce-consent',     // Default
+		duration: 365           // Default
+}
+});</script>
     <link rel="stylesheet" href="css/custom.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 	</head>
@@ -156,21 +166,14 @@
 						thumbDelaySpread:	0		// Spread (in ms) to randomly stagger thumbnails (0 = don't stagger)
             });});
         </script>
-<!--<script>
+<script type="text/plain" class="ce-script">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-50024349-1', 'samskeyti.github.io', {
-	  'anonymizeIp': true
-	  , 'storage': 'none'
-	  , 'clientId': window.localStorage.getItem('ga_clientId')
-	});
-	ga(function(tracker) {
-	  window.localStorage.setItem('ga_clientId', tracker.get('clientId'));
-	});
+	ga('create', 'UA-50024349-1');
 	ga('send', 'pageview');
-</script>-->
+</script>
 	</body>
 </html>
