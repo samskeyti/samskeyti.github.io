@@ -18,3 +18,7 @@ body{
   margin-bottom: 1em;
   letter-spacing: -2px;
 }
+.ce-banner{
+  padding: 3px;
+  background-color: #000;
+}
