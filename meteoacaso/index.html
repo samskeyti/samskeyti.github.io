@@ -9,11 +9,11 @@
         <title>Meteo @ Random</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <meta property="og:type"            content="website" /> 
-<meta property="og:url"             content="http://ilmeteorandom.it" /> 
-<meta property="og:title"           content="Meteo @ Random" /> 
-<meta property="og:image"           content="http://ilmeteorandom.it/img/logo.png" /> 
+
+        <meta property="og:type"            content="website" />
+<meta property="og:url"             content="http://ilmeteorandom.it" />
+<meta property="og:title"           content="Meteo @ Random" />
+<meta property="og:image"           content="http://ilmeteorandom.it/img/logo.png" />
 
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -25,10 +25,20 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/cookies-enabler.js"></script>
+        <script>COOKIES_ENABLER.init({
+    scriptClass: 'ce-script',   // Default
+    eventScroll: true,         // Default
+    bannerHTML: '<p>Questo sito usa i cookies.<a href="#" class="ce-trigger">Abilita i Cookies</a></p>',   // Default
+    cookie: {
+        name: 'ce-consent',     // Default
+        duration: 365           // Default
+    }
+});</script>
     </head>
     <body ng-controller="AppController" ng-cloak>
         <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script type="text/plain" class="ce-script">(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
@@ -40,9 +50,9 @@
         <![endif]-->
 
         <div class="container">
-        
+
             <div class="row">
-                
+
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-12"><h1 class="title">Meteo@Random</h1></div>
@@ -59,13 +69,13 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-12" ng-show="alert">
                     <div class="row">
                         <div class="col-md-12"><div class="alert alert-danger" role="alert"></div></div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-12" ng-repeat="day in days">
                     <div class="panel" ng-class="day.condition.class">
                         <div>
@@ -76,31 +86,31 @@
                                 <div class="col-md-6 col-sm-6 col-xs-6"><div class="condition">{{day.condition.label}}</div></div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
-                
+
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-12"><div class="alert alert-info" role="alert">
-                            
+
 				<h4 style="cursor:pointer;margin-top:10px;" ng-click="showinfo=!showinfo">Cos'è Meteo@Random? &nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" ng-show="!showinfo"></span><span class="glyphicon glyphicon-chevron-up" ng-show="showinfo"></span></h4>
 				<div ng-show="showinfo">
 					<p>Meteo@Random nasce da questo <a target="_blank" href="https://twitter.com/Auloedus/status/493444915771101184">tweet</a> di <a target="_blank" href="https://twitter.com/Auloedus">@Auloedus</a>
                     e da del tempo (non in senso atmosferico) che <a target="_blank" href="https://twitter.com/samskeyti79">@samskeyti79</a> aveva da perdere.
-                    </p> 
+                    </p>
                     <p>È un'app fatta per puro svago, senza nessuno scopo utile se non quello di avere un ennesimo servizio che fa le previsioni, a volte non meno preciso degli altri. Meteo@Random puoi usarlo finché non esce la previsione che desideri così puoi fare quello che avevi programmato infischiandotene di quello che dicono gli altri siti.</p>
                     <p>Decliniamo ogni responsabilità, quindi, albergatori, non denunciateci se non vengono i turisti perché è prevista una <i>Pioggia di meteore</i>&trade;.</p>
 				</div>
-			
+
                             </div></div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-12"><div class="alert alert-warning" role="alert">
-                            
+
 				<h3 style="cursor:pointer;margin-top:10px;" ng-click="showapp=!showapp">Trasforma in un'app &nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" ng-show="!showapp"></span><span class="glyphicon glyphicon-chevron-up" ng-show="showapp"></span></h3>
 				<div ng-show="showapp">
 					<p>Per salvare questa pagina web e usarla come applicazione sul telefono segui queste istruzioni:</p>
@@ -111,25 +121,25 @@
 					<h4>con Windows Phone</h4>
 					<p>Premi su Altro (bottone in basso a destra, quello con tre puntini) quindi premi su <em>Aggiungi a Start</em>.</p>
 				</div>
-			
+
                             </div></div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-6 col-sm-6"><div class="fb-like" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></div>
                         <div class="col-md-6 col-sm-6"><a href="https://twitter.com/share" class="twitter-share-button" data-lang="it" data-related="samskeyti79,auloedus">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+<script type="text/plain" class="ce-script">!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
                     </div>
                     <small class="text-muted">weather icons by <a target="_blank" href="http://erikflowers.github.io/weather-icons/">erikflowers</a></small>
                 </div>
-               
-                    
+
+
             </div>
-        
+
         </div>
-        
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
@@ -141,7 +151,7 @@
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+        <script type="text/plain" class="ce-script">
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
