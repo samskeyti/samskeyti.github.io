@@ -51,6 +51,27 @@ h2 .icon-me{
   position: absolute;
   left: -2.5rem;
 }
+@media (max-width: 64em) {
+  h2 .icon-me{
+    float: right;
+    position: relative;
+    left:auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media (max-width: 40em){
+  #menu{
+    margin-top: 2rem;
+  }
+  #menu a{
+    float:right;
+    clear: right;
+  }
+  #menu .middot{
+    display: none;
+  }
+}
 .icon-me{
   display: inline-block;
   background-image: url(../images/io192.png);
