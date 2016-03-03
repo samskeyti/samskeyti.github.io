@@ -1,0 +1,247 @@
+{
+  "basics": {
+    "name": "Daniele Paviani",
+    "label": "Full Stack Web Developer",
+    "picture": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/2/005/010/2f3/1856b0f.jpg",
+    "email": "daniele@paviani.it",
+    "phone": "+39 339 7690602",
+    "website": "http://daniele.paviani.it",
+    "summary": "Sviluppatore freelance specializzato nell’analisi, progettazione e realizzazione di applicazioni web, sia lato backend che frontend.  Esperienze in progettazione ed uso di database relazionali e non, sviluppo su piattaforme cloud, sviluppo frontend per dispositivi mobili e con uso di framework javascript moderni. Capacità di lavorare in autonomia e da remoto ma abituato anche alla collaborazione all’interno di un team. Ottime doti di analisi e risoluzione dei problemi, di creatività nel proporre soluzioni e di apprendimento di sistemi e tecnologie nuovi.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Ravenna",
+      "countryCode": "IT",
+      "region": "Emilia-Romagna"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "samskeyti79",
+        "url": "https://twitter.com/samskeyti79"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "danielepaviani",
+        "url": "https://it.linkedin.com/in/danielepaviani"
+      },
+      {
+        "network": "Instagram",
+        "username": "samskeyti79",
+        "url": "https://instragram.com/samskeyti79"
+      },
+      {
+        "network": "GitHub",
+        "username": "samskeyti",
+        "url": "https://github.com/samskeyti"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "AQrate",
+      "position": "Web Engineer",
+      "website": "http://www.aqrate.biz",
+      "startDate": "2014-10-01",
+      "endDate": "",
+      "summary": "Progettazione e sviluppo di piattaforma web per la gestione di traduzioni",
+      "highlights": [
+        "Backend RESTful in Java su Google AppEngine",
+        "Frontend in AngularJS"
+      ]
+    },
+    {
+      "company": "duDAT",
+      "position": "Frontend Developer",
+      "website": "https://booktab.it/",
+      "startDate": "2015-01-01",
+      "endDate": "2015-11-01",
+      "summary": "Sviluppo del frontend di applicazione per la consultazione di libri di testo",
+      "highlights": [
+        "Frontend con interazioni utente complesse in HTML5, Javascript e uso di canvas"
+      ]
+    },
+    {
+      "company": "ADP",
+      "position": "Senior Consultant",
+      "website": "http://www.it-adp.com/",
+      "startDate": "2014-09-01",
+      "endDate": "2015-03-01",
+      "summary": "Consulenza su personalizzazioni applicazione web di livello enterprise",
+      "highlights": [
+        "Visual Basic su database Oracle"
+      ]
+    },
+    {
+      "company": "6Seconds",
+      "position": "Full Stack Web Developer",
+      "website": "http://italia.6seconds.org/",
+      "startDate": "2011-01-01",
+      "endDate": "2014-12-01",
+      "summary": "Analisi e sviluppo di applicazione web di livello enterprise",
+      "highlights": [
+        "ASP.NET MVC, database SQLServer"
+      ]
+    },
+    {
+      "company": "Woofun",
+      "position": "Full Stack Web Developer",
+      "website": "http://www.woofun.com",
+      "startDate": "2012-01-01",
+      "endDate": "2014-12-01",
+      "summary": "Realizzazione applicazione web e per mobile rivolta al pubblico",
+      "highlights": [
+        "Backend in JAVA su Google AppEngine",
+        "Frontend in AngularJS, adattato al mobile"
+      ]
+    },
+    {
+      "company": "CityRedBus",
+      "position": "Web Developer",
+      "website": "http://cityredbus.com/",
+      "startDate": "2011-01-01",
+      "endDate": "",
+      "summary": "Analisi e sviluppo applicazione gestionale",
+      "highlights": [
+        "Backend in Java su Google AppEngine, database MySQL"
+      ]
+    },
+    {
+      "company": "Graftby",
+      "position": "Web Engineer",
+      "website": "http://graftby.com/",
+      "startDate": "2013-01-01",
+      "endDate": "2014-12-01",
+      "summary": "Analisi, progettazione e sviluppo di applicazione web",
+      "highlights": [
+        "Backend RESTful in Java su Google AppEngine",
+        "Frontend in AngularJS"
+      ]
+    },
+    {
+      "company": "emotID",
+      "position": "Web Developer",
+      "website": "http://www.emotid.com",
+      "startDate": "2011-01-01",
+      "endDate": "2014-12-01",
+      "summary": "Progettazione e sviluppo di social network",
+      "highlights": [
+        "Backend in Java su Google AppEngine"
+      ]
+    },
+    {
+      "company": "Cesop Communication",
+      "position": "Analyst Programmer",
+      "website": "http://www.cvweb.it",
+      "startDate": "2005-05-02",
+      "endDate": "2010-12-22",
+      "summary": "Analisi e sviluppo di personalizzazioni su applicazione web enterprise",
+      "highlights": [
+        "ASP e VisualBasic, database SQLServer"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "WSM",
+      "position": "Founder",
+      "website": "http://websoccermanager.org",
+      "startDate": "2004-11-15",
+      "endDate": "2015-11-15",
+      "summary": "Gioco di calcio manageriale online realizzato per hobby",
+      "highlights": [
+        "PHP su database Mysql",
+        "Oltre 14.000 iscritti"
+      ]
+    },
+    {
+      "organization": "Remfriends",
+      "position": "Web Developer",
+      "website": "http://www.remfriends.com",
+      "startDate": "2000",
+      "endDate": "2010",
+      "summary": "Realizzazione di sito web per la community dei fan dei R.E.M.",
+      "highlights": [
+        "PHP su database MySQL"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Università di Bologna",
+      "area": "Ingeneria Elettronica",
+      "studyType": "Laurea (5 anni) in",
+      "startDate": "1998-09-01",
+      "endDate": "2004-07-22",
+      "gpa": "90/100",
+      "courses": [
+        "Orientamento Calcolatori Elettronici"
+      ]
+    },
+    {
+      "institution": "Liceo Scientifico \"A. Oriani\" di Ravenna",
+      "area": "",
+      "studyType": "Maturità scientifica",
+      "startDate": "1993",
+      "endDate": "1998",
+      "gpa": "60/60",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Frontend Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "AngularJS",
+        "jQuery",
+        "Single page applications"
+      ]
+    },
+    {
+      "name": "Backend Web Development",
+      "level": "Master",
+      "keywords": [
+        "Java",
+        "C# .NET",
+        "NodeJS",
+        "PHP",
+        "Google AppEngine"
+      ]
+    },
+    {
+      "name": "Database",
+      "level": "Master",
+      "keywords": [
+        "MySQL",
+        "SQLServer",
+        "NOSQL",
+        "Google Datastore"
+      ]
+    },
+    {
+      "name": "Computer Engineering",
+      "level": "Master",
+      "keywords": [
+        "Analisi",
+        "Progettazione",
+        "Risoluzione problemi",
+        "Applicazioni Cloud",
+        "Applicazioni Mobile"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Conoscenza professionale"
+    }
+  ],
+  "interests": [],
+  "references": []
+}
