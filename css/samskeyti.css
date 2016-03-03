@@ -94,7 +94,6 @@ a:hover, a.active{
   text-decoration: none;
 }
 .content{
-  max-height: 200px;
   overflow-y: auto;
   font-size: 0.8em;
   margin-top: 3rem;
