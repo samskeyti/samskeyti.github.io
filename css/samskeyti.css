@@ -64,13 +64,13 @@ h2 .icon-me{
   #menu{
     margin-top: 2rem;
   }
-  #menu a{
+  /*#menu a{
     float:right;
     clear: right;
   }
   #menu .middot{
     display: none;
-  }
+  }*/
 }
 .icon-me{
   display: inline-block;
