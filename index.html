@@ -18,15 +18,15 @@
     <div class="container">
       <div class="clearfix mxn2">
 				<div class="col col-1">&nbsp;</div>
-        <div class="col md-col-5 px2 sm-col-10">
+        <div class="col md-col-4 px2 sm-col-10">
 					<h2><i class="icon-me"></i> Daniele Paviani</h2>
 					<sub class="montserrat">full stack web developer</sub>
         </div>
-        <div class="col md-col-5 px2 sm-col-10">
+        <div class="col md-col-6 px2 sm-col-10">
           <div class="right montserrat">
 						<div id="menu">
 							<a href="#cv">cv.json</a> <span class="middot">&middot;</span>
-							<!--<a href="#jobs">my.jobs</a> <span class="middot">&middot;</span>-->
+							<a href="#works">my.works</a> <span class="middot">&middot;</span>
 							<a href="#photos">photos.ig</a> <span class="middot">&middot;</span>
 							<a href="#contact" class="active">contact.me</a>
 						</div>
@@ -40,7 +40,7 @@
 						<div>Email: <a href="mailto:daniele@paviani.it">daniele@paviani.it</a></div>
 						<div>Twitter: <a href="https://twitter.com/samskeyti79">@samskeyti79</a></div>
 						<div>Facebook: <a href="https://www.facebook.com/daniele.paviani">Daniele Paviani</a></div>
-						<div>LinkedIn: <a href="https://it.linkedin.com/in/danielepaviani">Daniele Paviani</a></div>
+						<div>Medium: <a href="https://medium.com/@samskeyti79">@samskeyti79</a></div>
         		</div>
 				<div class="col md-col-5 content montserrat px2 sm-col-10" data-hash="#cv">
 						<div>Curriculum vitae:
@@ -48,7 +48,8 @@
 								<li><a href="http://registry.jsonresume.org/danielepaviani">vedi su jsonresume.org</a></li>
 								<li><a href="html/me.json.html">vedi in formato JSON</a></li>
 								<li><a href="resume.json">scarica in formato JSON</a></li>
-
+								<li><a href="https://it.linkedin.com/in/danielepaviani">vedi su LinkedIn</a></li>
+							</ul>
 						</div>
         		</div>
 		        <div class="col md-col-5 content montserrat px2 sm-col-10" data-hash="#contact #cv">
@@ -57,8 +58,38 @@
 
 							</div>
 		        </div>
+				<div class="col md-col-10 content montserrat px2 sm-col-10" data-hash="#works">
+						<div class="work">
+							<a href="https://samskeyti.github.io/staralfur/" class="nohover"><img src="images/staralfur.jpg" alt=""></a>
+							<div>
+								<h4><a href="https://samskeyti.github.io/staralfur/">staralfur</a></h4>
+								<p>motore di ricerca tra le foto di Instagram</p>
+							</div>
+						</div>
+						<div class="work">
+							<a href="http://ilparolaio.it" class="nohover"><img src="images/ilP.png" alt=""></a>
+							<div>
+								<h4><a href="http://ilparolaio.it">ilParolaio</a></h4>
+								<p>generatore di parole verosimili (su Twitter: <a href="https://twitter.com/il_parolaio">@il_parolaio</a>)</p>
+							</div>
+						</div>
+						<div class="work">
+							<a href="https://samskeyti.github.io/postponer/" class="nohover"><img src="images/staralfur.jpg" alt=""></a>
+							<div>
+								<h4><a href="https://samskeyti.github.io/postponer/">Google Calendar Postponer</a></h4>
+								<p>strumento per posporre (o preporre) eventi del calendario di Google</p>
+							</div>
+						</div>
+						<div class="work">
+							<a href="http://www.ilmeteorandom.it/" class="nohover"><img src="images/ilP.png" alt=""></a>
+							<div>
+								<h4><a href="http://www.ilmeteorandom.it/">Meteo@Random</a></h4>
+								<p>previsioni del tempo a caso</p>
+							</div>
+						</div>
+        		</div>
 				<div class="col md-col-10 content montserrat px2 sm-col-10" data-hash="#photos">
-					<div><a href="https://instagram.com/samskeyti79">instagram.com/samskeyti79</a></div>
+					<p><a href="https://instagram.com/samskeyti79">instagram.com/samskeyti79</a></p>
 					<!-- SnapWidget -->
 <script src="http://snapwidget.com/js/snapwidget.js"></script>
 <iframe src="http://snapwidget.com/in/?u=c2Ftc2tleXRpNzl8aW58MTI1fDl8NXx8bm98NXxub25lfG9uU3RhcnR8bm98eWVz&ve=030316" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
@@ -77,14 +108,20 @@
 		$('.content[data-hash*="'+hash+'"]').show();
 	}
 
+	function setContentHeight(){
+		$('.content').css('max-height', ($(window).height()-300) + 'px');
+	}
+
 	$(document).ready(function(){
 		hashchange(window.location.hash || '#contact');
 		$(window).on('hashchange', function() {
 		  hashchange(window.location.hash);
 		});
 
-		$('.content').css('max-height', ($(window).height()-300) + 'px');
-
+		setContentHeight();
+		$(window).on('resize', function() {
+		  setContentHeight();
+		});
 	});
 
 	</script>

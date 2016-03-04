@@ -93,8 +93,31 @@ a:hover, a.active{
   background-color: #000;
   text-decoration: none;
 }
+a.nohover:hover{
+    color:#000;
+    background-color: transparent;
+    text-decoration: none;
+}
 .content{
   overflow-y: auto;
   font-size: 0.8em;
   margin-top: 3rem;
+}
+
+.work{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 125px;
+}
+.work img{
+    width: 125px;
+    height: 125px;
+    border: 1px solid black;
+    margin-right: 20px;
+    border-radius: 4px;
+    display: block;
+    float: left;
+}
+.work > div{
+    float: left;
 }
