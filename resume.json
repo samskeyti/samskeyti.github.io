@@ -2,10 +2,10 @@
   "basics": {
     "name": "Daniele Paviani",
     "label": "Full Stack Web Developer",
-    "picture": "http://paviani.it/images/dp.jpg",
+    "picture": "http://daniele.paviani.it/images/dp.jpg",
     "email": "daniele@paviani.it",
     "phone": "+39 339 7690602",
-    "website": "http://paviani.it",
+    "website": "http://daniele.paviani.it",
     "summary": "Sviluppatore freelance specializzato nell’analisi, progettazione e realizzazione di applicazioni web, sia lato backend che frontend.  Esperienze in progettazione ed uso di database relazionali e non, sviluppo su piattaforme cloud, sviluppo frontend per dispositivi mobili e con uso di framework javascript moderni. Capacità di lavorare in autonomia e da remoto ma abituato anche alla collaborazione all’interno di un team. Ottime doti di analisi e risoluzione dei problemi, di creatività nel proporre soluzioni e di apprendimento di sistemi e tecnologie nuovi.",
     "location": {
       "address": "",
