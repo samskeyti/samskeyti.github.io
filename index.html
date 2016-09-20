@@ -1,150 +1,118 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>samskeyti - Daniele Paviani</title>
+		<title>Daniele Paviani</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
+		<meta name="description" content="Daniele Paviani - full stack web developer" />
 		<meta name="keywords" content="" />
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script>-->
 
-    <link href="css/basscss.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/samskeyti.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-	</head>
-	<body class="home">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Reenie+Beanie" rel="stylesheet">
 
-    <div class="container">
-      <div class="clearfix mxn2">
-				<div class="col col-1">&nbsp;</div>
-        <div class="col md-col-4 px2 sm-col-10 col-10">
-					<h2><i class="icon-me"></i> Daniele Paviani</h2>
-					<sub class="montserrat">full stack web developer</sub>
+        <script src="https://use.fontawesome.com/cb2e8f47c2.js"></script>
+
+        <style>
+
+        #container {
+            display: flex; /* establish flex container */
+            flex-direction: row; /* make main axis horizontal (default value) */
+            justify-content: center; /* center items horizontally, in this case */
+            align-items: center; /* center items vertically, in this case */
+        }
+        @media (max-width:640px) {
+            #container {
+                flex-direction: column;
+            }
+        }
+
+        .box {
+            width: 260px;
+            height: 260px;
+            margin: 5px;
+            padding: 10px;
+            background-size: contain;
+            border-radius: 2px;
+            position: relative;
+            font-family: 'Reenie Beanie', sans-serif;
+        }
+        p{
+            font-size: 1.2em;
+        }
+        h1 { font-size: 2.4em; font-family: 'Amatic SC', sans-serif; }
+        h3 { font-size: 1.8em; font-family: 'Amatic SC', sans-serif; }
+        h1, h3{ margin: 0; padding: 0; }
+        a { color: #444 }
+        a:hover { color: #000 }
+        #box1 {  }
+        #box2 {
+            background-color: #fff;
+            color: #000;
+            opacity: 0.5;
+        }
+        .icons{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-size: 2em;
+            text-align: right;
+        }
+        .icons i{
+            margin: 1px;
+        }
+        </style>
+    </head>
+    <body>
+
+        <div id="container"><!-- flex container -->
+
+            <div class="box" id="box1"><!-- flex item -->
+
+            </div>
+
+            <div class="box" id="box2"><!-- flex item -->
+                <h1>Daniele Paviani</h1>
+                <h3>full stack web developer</h3>
+                <p>
+                    email: <a href="mailto:daniele@paviani.it">daniele@paviani.it</a><br/>
+                    <a href="http://registry.jsonresume.org/danielepaviani">curriculum</a>
+                    / <a href="html/me.json.html">json</a>
+                    / <a href="resume.json"><i class="fa fa-file-text-o"></i></a>
+                    / <a href="https://it.linkedin.com/in/danielepaviani" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </p>
+                <div class="icons">
+                    <a href="https://twitter.com/samskeyti79" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/samskeyti79" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/daniele.paviani" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+
+                    <a href="https://github.com/samskeyti" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.snapchat.com/add/samskeyti79" target="_blank"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                    <a href="https://medium.com/@samskeyti79" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
         </div>
-        <div class="col md-col-6 px2 sm-col-10 col-10">
-          <div class="right montserrat">
-						<div id="menu">
-							<a href="#cv">cv.json</a> <span class="middot">&middot;</span>
-							<a href="#works">my.works</a> <span class="middot">&middot;</span>
-							<a href="#photos">photos.ig</a> <span class="middot">&middot;</span>
-							<a href="#contact" class="active">contact.me</a>
-						</div>
-          </div>
-        </div>
-				<div class="col col-1">&nbsp;</div>
-      </div>
-			<div class="clearfix mxn2">
-				<div class="col col-1">&nbsp;</div>
-				<div class="col md-col-5 content montserrat px2 sm-col-10 col-10" data-hash="#contact">
-						<div>Email: <a href="mailto:daniele@paviani.it">daniele@paviani.it</a></div>
-						<div>Twitter: <a href="https://twitter.com/samskeyti79">@samskeyti79</a></div>
-						<div>Facebook: <a href="https://www.facebook.com/daniele.paviani">Daniele Paviani</a></div>
-						<div>Medium: <a href="https://medium.com/@samskeyti79">@samskeyti79</a></div>
-        		</div>
-				<div class="col md-col-5 content montserrat px2 sm-col-10 col-10" data-hash="#cv">
-						<div>Curriculum vitae:
-							<ul>
-								<li><a href="http://registry.jsonresume.org/danielepaviani">vedi su jsonresume.org</a></li>
-								<li><a href="html/me.json.html">vedi in formato JSON</a></li>
-								<li><a href="resume.json">scarica in formato JSON</a></li>
-								<li><a href="https://it.linkedin.com/in/danielepaviani">vedi su LinkedIn</a></li>
-							</ul>
-						</div>
-        		</div>
-		        <div class="col md-col-5 content montserrat px2 sm-col-10" data-hash="#contact #cv">
-							<div class="right right-align">
-								&nbsp;
 
-							</div>
-		        </div>
-				<div class="col md-col-10 content montserrat px2 sm-col-10 col-10" data-hash="#works">
-						<div class="work">
-							<a href="http://websoccermanager.org" class="nohover"><img src="images/wsm.png" alt=""></a>
-							<div>
-								<h4><a href="http://websoccermanager.org">WSM</a></h4>
-								<p>gioco di calcio manageriale</p>
-							</div>
-						</div>
-						<div class="work">
-							<a href="https://samskeyti.github.io/staralfur/" class="nohover"><img src="images/staralfur.jpg" alt=""></a>
-							<div>
-								<h4><a href="https://samskeyti.github.io/staralfur/">staralfur</a></h4>
-								<p>motore di ricerca tra le foto di Instagram</p>
-							</div>
-						</div>
-						<div class="work">
-							<a href="http://ilparolaio.it" class="nohover"><img src="images/ilP.png" alt=""></a>
-							<div>
-								<h4><a href="http://ilparolaio.it">ilParolaio</a></h4>
-								<p>generatore di parole verosimili (su Twitter: <a href="https://twitter.com/il_parolaio">@il_parolaio</a>)</p>
-							</div>
-						</div>
-						<div class="work">
-							<a href="http://samskeyti.github.io/postponer/" class="nohover"><img src="images/postponer.png" alt=""></a>
-							<div>
-								<h4><a href="http://samskeyti.github.io/postponer/">Google Calendar Postponer</a></h4>
-								<p>strumento per posporre (o preporre) eventi del calendario di Google</p>
-							</div>
-						</div>
-						<div class="work">
-							<a href="http://www.ilmeteorandom.it/" class="nohover"><img src="/meteoacaso/img/logo.png" alt=""></a>
-							<div>
-								<h4><a href="http://www.ilmeteorandom.it/">Meteo@Random</a></h4>
-								<p>previsioni del tempo a caso</p>
-							</div>
-						</div>
-						<div class="work">
-							<a href="http://samskeyti.github.io/random/fantasy.html" class="nohover"><img src="/random/img/498452.jpg" alt=""></a>
-							<div>
-								<h4><a href="http://samskeyti.github.io/random/fantasy.html">W.R.R.Iter</a></h4>
-								<p>generatore casuale di nomi di scrittori fantasy</p>
-							</div>
-						</div>
-						<div class="work">
-							<img src="images/remfriends/homepage.png" alt="">
-							<div>
-								<h4><a href="#works">Remfriends</a></h4>
-								<p>Portale community italiana dei fan dei R.E.M. (non più online)</p>
-							</div>
-						</div>
-        		</div>
-				<div class="col md-col-10 content montserrat px2 sm-col-10 col-10" data-hash="#photos">
-					<p><a href="https://instagram.com/samskeyti79">instagram.com/samskeyti79</a></p>
-					<!-- SnapWidget -->
-					<script src="https://snapwidget.com/js/snapwidget.js"></script>
-					<iframe src="https://snapwidget.com/embed/249750" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-				</div>
-				<div class="col col-1">&nbsp;</div>
-			</div>
-    </div>
+        <img style="display:none" id="image">
 
-	<script src="js/jquery.min.js"></script>
-	<script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/color-thief.min.js"></script>
+        <script>
+            $('#container').height($(window).height());
+            $('#image').on('load', function(){
+                var colorThief = new ColorThief();
+                var dominantColor = colorThief.getColor($('#image')[0]);
+                console.log(dominantColor);
+                $('body').css('background-color', 'rgb('+dominantColor[0]+','+dominantColor[1]+','+dominantColor[2]+')');
+            });
+            function changeImage(){
+                var img = ('0000' + (Math.floor(Math.random() * 717) + 1)).slice(-4);
+                $('#box1').css('background-image', 'url(images/Instagram/'+img+'.jpg)');
+                $('#image').attr('src','images/Instagram/'+img+'.jpg');
+                setTimeout(changeImage, 10000);
+            }
+            changeImage();
 
-	function hashchange(hash){
-		$('#menu a').removeClass('active');
-		$('#menu a[href="'+hash+'"]').addClass('active');
-		$('.content').hide();
-		$('.content[data-hash*="'+hash+'"]').show();
-	}
 
-	function setContentHeight(){
-		$('.content').css('max-height', ($(window).height()-300) + 'px');
-	}
-
-	$(document).ready(function(){
-		hashchange(window.location.hash || '#cv');
-		$(window).on('hashchange', function() {
-		  hashchange(window.location.hash);
-		});
-
-		setContentHeight();
-		$(window).on('resize', function() {
-		  setContentHeight();
-		});
-	});
-
-	</script>
-	</body>
+        </script>
+    </body>
 </html>
