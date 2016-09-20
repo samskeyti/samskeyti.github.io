@@ -108,6 +108,7 @@
                 var img = ('0000' + (Math.floor(Math.random() * 717) + 1)).slice(-4);
                 $('#box1').css('background-image', 'url(images/Instagram/'+img+'.jpg)');
                 $('#image').attr('src','images/Instagram/'+img+'.jpg');
+                setTimeout(function(){ $('#image').load(); }, 1000);
                 setTimeout(changeImage, 10000);
             }
             changeImage();
