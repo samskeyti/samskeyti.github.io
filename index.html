@@ -36,13 +36,13 @@
             font-family: 'Reenie Beanie', sans-serif;
         }
         p{
-            font-size: 1.2em;
+            font-size: 1.4em;
         }
         h1 { font-size: 2.4em; font-family: 'Amatic SC', sans-serif; }
         h3 { font-size: 1.8em; font-family: 'Amatic SC', sans-serif; }
         h1, h3{ margin: 0; padding: 0; }
-        a { color: #444 }
-        a:hover { color: #000 }
+        a { color: #444; text-decoration: none; }
+        a:hover { color: #000; text-decoration: underline; }
         #box1 {  }
         #box2 {
             background-color: #fff;
@@ -73,11 +73,13 @@
                 <h1>Daniele Paviani</h1>
                 <h3>full stack web developer</h3>
                 <p>
-                    email: <a href="mailto:daniele@paviani.it">daniele@paviani.it</a><br/>
+                    <a href="mailto:daniele@paviani.it">daniele@paviani.it</a><br/>
                     <a href="http://registry.jsonresume.org/danielepaviani">curriculum</a>
                     / <a href="html/me.json.html">json</a>
-                    / <a href="resume.json"><i class="fa fa-file-text-o"></i></a>
-                    / <a href="https://it.linkedin.com/in/danielepaviani" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <!--/ <a href="resume.json"><i style="font-size:0.7em" class="fa fa-file-text-o"></i></a>-->
+                    / <a href="https://it.linkedin.com/in/danielepaviani" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a><br/>
+                    <a href="portfolio">portfolio</a><br/>
+					<a href="skills">skills</a>
                 </p>
                 <div class="icons">
                     <a href="https://twitter.com/samskeyti79" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
@@ -85,7 +87,7 @@
                     <a href="https://www.facebook.com/daniele.paviani" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
 
                     <a href="https://github.com/samskeyti" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="https://www.snapchat.com/add/samskeyti79" target="_blank"><i class="fa fa-snapchat" aria-hidden="true"></i></a>
+                    <!--<a href="https://www.snapchat.com/add/samskeyti79" target="_blank"><i class="fa fa-snapchat" aria-hidden="true"></i></a>-->
                     <a href="https://medium.com/@samskeyti79" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
                 </div>
             </div>
@@ -105,11 +107,11 @@
                 $('body').css('background-color', 'rgb('+dominantColor[0]+','+dominantColor[1]+','+dominantColor[2]+')');
             });
             function changeImage(){
-                var img = ('0000' + (Math.floor(Math.random() * 717) + 1)).slice(-4);
+                var img = ('00000' + (Math.floor(Math.random() * 1194) + 1)).slice(-5);
                 $('#box1').css('background-image', 'url(images/Instagram/'+img+'.jpg)');
                 $('#image').attr('src','images/Instagram/'+img+'.jpg');
                 setTimeout(function(){ $('#image').load(); }, 1000);
-                setTimeout(changeImage, 10000);
+                setTimeout(changeImage, 8000);
             }
             changeImage();
 

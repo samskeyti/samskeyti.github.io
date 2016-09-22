@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Daniele Paviani - portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Daniele Paviani - full stack web developer" />
+		<meta name="keywords" content="" />
+
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Reenie+Beanie|Teko:300" rel="stylesheet">
+
+        <script src="https://use.fontawesome.com/cb2e8f47c2.js"></script>
+
+        <style>
+		body{
+			background-color: #ccc;
+		}
+        #container {
+            display: flex; /* establish flex container */
+            flex-direction: column; /* make main axis horizontal (default value) */
+            justify-content: center; /* center items horizontally, in this case */
+            align-items: center; /* center items vertically, in this case */
+        }
+		.row{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+		.box{
+			width: 280px;
+			margin: 5px;
+            padding: 10px;
+			background-color: #fff;
+            border-radius: 4px;
+		}
+		.box img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+        p{
+			margin-top: 0px;
+            font-size: 1.2em;
+        }
+        h4 { font-size: 1.2em; font-family: 'Amatic SC', sans-serif; }
+		h2 { font-size: 1.6em; font-family: 'Amatic SC', sans-serif; }
+        h4{ margin: 0; padding: 0; }
+        a { color: #444 }
+        a:hover { color: #000 }
+
+
+		.progress {
+			font-family: 'Teko', sans-serif;
+			font-size: 20px;
+			line-height: 30px;
+		  width: 100%;
+		  height: 30px;
+		}
+		.progress-wrap {
+		  background: #fb0;
+		  margin: 10px 0;
+		  overflow: hidden;
+		  position: relative;
+		}
+		.progress-bar {
+		  background: #ddd;
+		  left: 0;
+		  position: absolute;
+		  top: 0;
+		}
+
+        </style>
+    </head>
+    <body>
+
+        <div id="container"><!-- flex container -->
+
+			<div class="row">
+				<a href="/" class="nohover"><h2><i class="fa fa-home"></i> Daniele Paviani</h2></a>
+			</div>
+
+			<div class="row">
+				<div class="box">
+
+					<script>
+						var skills = [
+							{ s: 'Backend development', v: 90 },
+							{ s: 'Frontend development', v: 70 },
+							{ s: 'Analysis & Engineering', v: 90 },
+							{ s: 'Web Design', v: 50 },
+							{ s: 'Javascript', v: 90 },
+							{ s: 'HTML5 & CSS3', v: 85 },
+							{ s: 'AngularJS', v: 85 },
+							{ s: 'Java', v: 85 },
+							{ s: 'Google Cloud Platform', v: 80 },
+							{ s: 'Data Design', v: 90 },
+							{ s: 'Database (SQL & noSQL)', v: 90 },
+							{ s: 'PHP', v: 60 },
+							{ s: '.NET', v: 60 },
+							{ s: 'Angular2', v: 40 },
+							{ s: 'NodeJS', v: 80 },
+							{ s: 'Firebase', v: 70 },
+							{ s: 'OAuth', v: 70 },
+							{ s: 'ReactJS', v: 30 },
+							{ s: 'Python', v: 20 },
+							{ s: 'Data Science', v: 25 },
+							{ s: 'C#', v: 60 },
+							{ s: 'Web Applications', v: 90 },
+							{ s: 'AWS', v: 20 },
+							{ s: 'jQuery', v: 80 },
+							{ s: 'OOP', v: 85 },
+							{ s: 'Redis', v: 20 },
+							{ s: 'MongoDB', v: 40 },
+							{ s: 'MySQL', v: 75 }
+						];
+						function compare(a,b) {
+						  if (a.v < b.v)
+						    return 1;
+						  if (a.v > b.v)
+						    return -1;
+						  if(a.s < b.s)
+						    return -1;
+						  if(a.s > b.s)
+  						    return 1;
+						  return 0;
+						}
+
+						skills.sort(compare);
+						for(var i=0; i<skills.length; i++){
+							document.write('<div class="progress-wrap progress" data-progress-percent="'+skills[i].v+'">&nbsp;'+skills[i].s+
+							  '<span style="opacity:0">'+skills[i].v+'%</span>'+
+							  '<div class="progress-bar progress"></div></div>');
+						}
+					</script>
+
+
+				</div>
+			</div>
+
+
+        </div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script>
+		// on page load...
+		moveProgressBar();
+		// on browser resize...
+		$(window).resize(function() {
+			moveProgressBar();
+		});
+
+		// SIGNATURE PROGRESS
+		function moveProgressBar() {
+			$('.progress-wrap').each(function(i){
+				var getPercent = ($(this).data('progress-percent') / 100);
+				var getProgressWrapWidth = $(this).width();
+				var progressTotal = getPercent * getProgressWrapWidth;
+				var animationLength = 2500;
+
+				// on page load, animate percentage bar to data percentage length
+				// .stop() used to prevent animation queueing
+				$(this).find('.progress-bar').stop().animate({
+					left: progressTotal
+				}, animationLength);
+			});
+
+		}
+		</script>
+
+    </body>
+</html>

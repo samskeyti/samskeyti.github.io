@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Daniele Paviani - portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="Daniele Paviani - full stack web developer" />
+		<meta name="keywords" content="" />
+
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Reenie+Beanie" rel="stylesheet">
+
+        <script src="https://use.fontawesome.com/cb2e8f47c2.js"></script>
+
+        <style>
+		body{
+			background-color: #ccc;
+		}
+        #container {
+            display: flex; /* establish flex container */
+            flex-direction: column; /* make main axis horizontal (default value) */
+            justify-content: center; /* center items horizontally, in this case */
+            align-items: center; /* center items vertically, in this case */
+        }
+		.row{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+		.box{
+			width: 80px;
+			height: 120px;
+			margin: 5px;
+            padding: 10px;
+			background-color: #fff;
+            border-radius: 4px;
+		}
+        .box2 {
+            width: 160px;
+            height: 120px;
+            margin: 5px;
+            padding: 10px;
+            background-size: contain;
+            border-radius: 4px;
+            position: relative;
+            font-family: 'Reenie Beanie', sans-serif;
+			background-color: #fff;
+        }
+		.box img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+        p{
+			margin-top: 0px;
+            font-size: 1.2em;
+        }
+        h4 { font-size: 1.2em; font-family: 'Amatic SC', sans-serif; }
+		h2 { font-size: 1.6em; font-family: 'Amatic SC', sans-serif; }
+        h4{ margin: 0; padding: 0; }
+        a { color: #444 }
+        a:hover { color: #000 }
+
+        </style>
+    </head>
+    <body>
+
+        <div id="container"><!-- flex container -->
+
+			<div class="row">
+				<a href="/" class="nohover"><h2><i class="fa fa-home"></i> Daniele Paviani</h2></a>
+			</div>
+			<div class="row">
+				<h4>Svaghi, bagatelle e divertissement... :)</h4>
+			</div>
+
+			<div class="row">
+				<div class="box"><a href="http://websoccermanager.org" class="nohover" target="_blank"><img src="images/wsm.png" alt=""></a></div>
+				<div class="box2">
+					<h4><a href="http://websoccermanager.org" target="_blank">WSM</a></h4>
+					<p>gioco di calcio manageriale</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="box"><a href="https://samskeyti.github.io/staralfur/" class="nohover" target="_blank"><img src="images/staralfur.jpg" alt=""></a></div>
+				<div class="box2">
+					<h4><a href="https://samskeyti.github.io/staralfur/" target="_blank">staralfur</a></h4>
+					<p>motore di ricerca tra le foto di Instagram</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="box"><a href="http://ilparolaio.it" class="nohover" target="_blank"><img src="images/ilP.png" alt=""></a></div>
+				<div class="box2">
+					<h4><a href="http://ilparolaio.it" target="_blank">ilParolaio</a></h4>
+					<p>generatore di parole verosimili (su Twitter: <a href="https://twitter.com/il_parolaio">@il_parolaio</a>)</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="box"><a href="http://samskeyti.github.io/postponer/" class="nohover" target="_blank"><img src="images/postponer.png" alt=""></a></div>
+				<div class="box2">
+					<h4><a href="http://samskeyti.github.io/postponer/" target="_blank">Google Calendar Postponer</a></h4>
+					<p>strumento per posporre (o preporre) eventi del calendario di Google</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="box"><a href="http://www.ilmeteorandom.it/" class="nohover" target="_blank"><img src="/meteoacaso/img/logo.png" alt=""></a></div>
+				<div class="box2">
+					<h4><a href="http://www.ilmeteorandom.it/" target="_blank">Meteo@Random</a></h4>
+					<p>previsioni del tempo a caso</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="box"><a href="http://samskeyti.github.io/random/fantasy.html" class="nohover" target="_blank"><img src="/random/img/498452.jpg" alt=""></a></div>
+				<div class="box2">
+					<h4><a href="http://samskeyti.github.io/random/fantasy.html" target="_blank">W.R.R.Iter</a></h4>
+					<p>generatore casuale di nomi di scrittori fantasy</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="box"><a href="https://web.archive.org/web/20080615000000*/http://www.remfriends.com" target="_blank"><img src="images/remfriends/homepage.png" alt=""></a></div>
+				<div class="box2">
+					<h4><a href="https://web.archive.org/web/20080615000000*/http://www.remfriends.com" target="_blank">Remfriends</a></h4>
+					<p>Portale community italiana dei fan dei R.E.M. (non più online)</p>
+				</div>
+			</div>
+
+
+        </div>
+
+    </body>
+</html>
