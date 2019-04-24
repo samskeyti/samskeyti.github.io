@@ -107,7 +107,7 @@
                 $('body').css('background-color', 'rgb('+dominantColor[0]+','+dominantColor[1]+','+dominantColor[2]+')');
             });
             function changeImage(){
-                var img = ('00000' + (Math.floor(Math.random() * 1396) + 1)).slice(-5);
+                var img = ('00000' + (Math.floor(Math.random() * 1624) + 1)).slice(-5);
                 $('#box1').css('background-image', 'url(images/Instagram/'+img+'.jpg)');
                 $('#image').attr('src','images/Instagram/'+img+'.jpg');
                 setTimeout(function(){ $('#image').load(); }, 1000);
